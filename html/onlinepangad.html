@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="main">
+	<head>
+		<meta charset=UTF-8" />
+		<title>Online Pangad</title>
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="../js/angular.min.js"></script>
+		<script src="../js/main.js"></script>
+
+	</head>
+	<body id="b1" ng-controller="MainCtrl">
+		<header>
+			<img src="../images/logo.png" > 
+		</header>
+		<div id="text_holder1">
+			<p> KRUIIS TALLINN-STOCKHOLM-TALLINN &#160&#160 <i class="fa fa-info-circle" style="font-size:20px;color:#ffffff"></i>&#160&#160 <span class="number">252</span></p>
+		</div>
+		<div id="navbar">
+			<ul>
+				<li><a href="onlinepangad.html" id="onlink"> Online pangad </a></li>
+				<li><a href="krediitkaart.html"> Krediitkaart </a></li>
+			</ul>
+		</div>
+		<div id="main_container">
+			<table id="table1">
+				<tr>
+					<th><input name="radio" type="radio"> Swedbank </th>
+					<th><img src="../images/swedbank_logo.gif"><th>
+				</tr>
+				  <tr>
+					<th><input name="radio" type="radio"> SEB </th>
+					<th><img src="../images/seb_logo.jpg"><th>
+				</tr>
+				<tr>
+					<th><input name="radio" type="radio" > Nordea </th>
+					<th><img src="../images/nordea_logo.png"><th>
+				</tr>
+				<tr>
+					<th><input name="radio" type="radio" > Danske Bank </th>
+					<th><img src="../images/danskebank_logo.png"><th>
+				</tr>
+			</table>
+			<button id="button1" ng-click="clicked()">Maksa</button>
+		</div>
+	</body>
+</html>
